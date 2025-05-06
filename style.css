@@ -1,0 +1,937 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F9F9F9;
+    margin: 0 auto;
+}
+
+/*PAI de img e nav*/
+header{
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+
+    background-color: rgba(211, 211, 211, 0.219);
+
+    width: 100%;
+    height: 100px;
+
+
+    font-family: Poppins;
+    font-weight: 400;
+}
+
+.alinhamentoHeader{
+    width: 1350px;
+    height: 100px;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 280px;
+    padding-left: 20px;
+}
+
+/*PAI  das divs navegacao*/
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+
+    width: 850px;
+    height: 90px; 
+
+    padding-right: 10px;
+}
+#home a{
+    text-decoration: none;
+    color: #ffa52f;
+    padding-right: 20px;
+}
+.navegacao a{
+    color: black;
+    text-decoration: none;
+
+    padding-right: 20px;
+}
+.navegacao a:hover{
+    color: #ffa52f;
+}
+
+.login{
+    width: 300px;
+    height: 50px;
+    margin-left: 110px;
+
+    display: flex;
+    align-items: center;
+}
+.lupa img{
+    padding-top: 6px;
+    padding-right: 8px;
+}
+.search p{
+    padding-right: 6px;
+}
+.separacao img{
+    padding-top: 6px;
+    padding-right: 6px
+}
+.compras img{
+    padding-top: 6px;
+    padding-right: 8px;
+}
+.cart a{
+    padding-right: 15px;
+    text-decoration: none;
+    color: black;
+}
+.cart a:hover{
+    color: #ffa52f;
+}
+
+.sign{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 110px;
+    height: 50px;
+    border: 1px solid black;
+    border-radius: 50px;
+
+    cursor: pointer;
+}
+.sign:hover{
+    background-color: #F57C00;
+    color: white;
+    border: none;
+}
+.sign:hover a{
+    color: #F9F9F9;
+}
+.sign a{
+    text-decoration: none;
+    color: black;
+}
+/*-----FIM HEADER-----*/
+
+/*-----INÍCIO MAIN-----*/
+main{
+    max-width: 1350px;
+    margin: 0 auto;
+}
+
+#imgPropaganda{
+    background-color: rgba(221, 221, 221, 0.329);
+
+    display: flex;
+    justify-content: center;
+}
+#imgPropaganda img{ /*AJUSTAR ****************************/
+    max-width: 100%;
+}
+
+
+#linkSites{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    background-color: white;
+
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+#nossosServicos{
+    display: flex;
+    justify-self: center;
+
+    font-family: 'Bodoni Moda';
+}
+#nossosServicos h1{
+    padding-right: 15px;
+}
+#nossosServicos p{
+    display: block;
+}
+
+/*------------------*/
+.nossoServico{
+    width: 1350px;
+    height: 250px;
+
+    background-color: white;
+
+    text-align: center;
+
+    padding-top: 100px;
+}
+.nossoServico h1{
+    font-family: 'Bodoni Moda';
+    font-size: 70px;
+
+    display: inline;
+}
+.nossoServico h1#dourado{
+    padding-left: 20px;
+    color: #F57C00;
+}
+.textoNossoServico p{
+    color: gray;
+    font-family: Poppins;
+
+    margin-top: 20px;
+}
+
+/*-----FIM nossos serviços-----*/
+
+
+#cards{
+    padding-top: 90px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: start;
+
+    width: 1350px;
+    height: 400px;
+
+    background: url(imagens/faixa.png);
+    border-radius: 10px;
+
+}
+.cards{
+    width: 350px;
+    height: 300px;
+    background-color: white;
+
+    border: 1px solid lightgray;
+    border-radius: 15px;
+}
+.sombra{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(128, 128, 128, 0.486);
+    border-radius: 30px;
+}
+
+/*DELIVERY*/
+#delivery{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    font-family: Poppins;
+}
+#entrega{
+    padding-top: 8px;
+}
+#delivery h2{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    color: rgb(26, 26, 26);
+}
+#delivery p{
+    padding-top: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(100, 100, 100);
+}
+
+/*NO SIDE EFFECT*/
+#effect{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    font-family: Poppins;
+
+}
+.sombra img{
+    padding-top: 13px;
+}
+#effect h2{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    color: rgb(26, 26, 26);
+}
+#effect p{
+    padding-top: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(100, 100, 100);
+}
+
+/*Natural Ingredients*/
+#natural{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    text-align: center;
+    font-family: Poppins;
+}
+#vaso{
+    padding-top: 8px;
+}
+#natural h2{
+    padding-top: 30px;
+    padding-bottom: 10px;
+    color: rgb(26, 26, 26);
+}
+#natural p{
+    padding-top: 5px;
+    font-size: 13px;
+    font-weight: 600;
+    color: rgb(100, 100, 100);
+}
+/*FIM CARDS*/
+
+/*ABOUT PRODUCTS*/
+#about{
+    display: flex;
+    justify-content: space-between;
+
+    width: 1350px;
+    height: 800px;
+
+    margin-top: 250px;
+}
+
+.sobre{
+    width: 850px;
+    height: 550px;
+}
+.sobre h1{
+    font-family: 'Bodoni Moda';
+    font-size: 70px;
+
+    display: inline;
+}
+.sobre h1#dourado{
+    padding-left: 20px;
+    color: #F57C00;
+}
+.textoSobre p{
+    color: gray;
+    font-family: Poppins;
+}
+
+
+.dados{
+    display: flex;
+
+    width: 700px;
+    height: 220px;
+
+    margin-top: 50px;
+    font-family: Poppins;
+}
+
+.allCards{
+    width: 300px;
+    height: 100px;
+}
+.allCards h3{
+    font-size: 40px;
+    font-weight: 600;
+}
+.allCards p{
+    color: rgb(54, 54, 54);
+    font-size: 20px;
+    font-weight: 600;
+}
+
+#card01{
+    margin-right: 100px;
+}
+#card01 p{
+    color: rgb(88, 88, 88);
+}
+#card02 p{
+    color: rgb(88, 88, 88);
+}
+#card03 p{
+    color: rgb(88, 88, 88);
+}
+#card04 p{
+    color: rgb(88, 88, 88);
+}
+
+.button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 190px;
+    height: 50px;
+
+    background-color: #F57C00;
+    border: 1px solid #F57C00;
+    border-radius: 50px;
+
+    font-family: Poppins;
+    font-size: 18px;
+
+    margin-top: 30px;
+}
+.button a{
+    text-decoration: none;
+    color: white;
+}
+.button a:hover{
+    color: black;
+}
+
+.imgProdutos{
+    display: inline;
+}
+
+.imgProdutos{
+    display: flex;
+    height: 550px;
+    padding: 50px 10px 10px 70px;
+}
+/*-----FIM IMAGENS PRODUTOS*/
+
+
+.features{
+    width: 100%;
+    height: 300px;
+    background-color: white;
+
+    text-align: center;
+
+    margin-top: 100px;
+}
+.features h1{
+    font-family: 'Bodoni Moda';
+    font-size: 70px;
+
+    display: inline;
+}
+.features h1#dourado{
+    padding-left: 20px;
+    color: #F57C00;
+}
+.textoFeatures{
+    background-color: white;
+}
+.textoFeatures p{
+    color: gray;
+    font-family: Poppins;
+
+    margin-top: 20px;
+}
+
+
+/*-----INÍCIO FEATURES-----*/
+.cardsFeatures{
+    display: flex;
+    justify-content: space-between;
+
+    width: 1350px;
+    height: 600px;
+
+    margin-top: 100px;
+}
+.creme {
+    display: flex;
+    flex-flow: column wrap;
+
+    width: 430px;
+    height: 510px;
+
+    border: 1px solid rgba(99, 99, 99, 0.623);
+    border-radius: 20px;
+}
+.imgCremeVerde{
+    width: 430px;
+    height: 300px;
+    background-color: rgba(197, 197, 197, 0.301);
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+}
+.imgCremeLaranja{
+    width: 430px;
+    height: 300px;
+    background-color: rgba(197, 197, 197, 0.301);
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+}
+.imgCremeAmarelo{
+    width: 430px;
+    height: 300px;
+    background-color: rgba(197, 197, 197, 0.301);
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+}
+.creme h2{
+    font-family: Poppins;
+    font-weight: 500;
+    color: rgb(0, 0, 75);
+
+    padding: 15px;
+}
+.creme p{
+    font-family: Poppins;
+    color: rgb(88, 88, 88);
+    padding: 15px;
+}
+.creme p a{
+    padding: 10px 35px 10px 35px;
+    
+    background-color: rgba(211, 211, 211, 0.521);
+    color: black;
+    text-decoration: none;
+
+    border: 1px solid lightgray;
+    border-radius: 10px;
+}
+.creme p a:hover{
+    background-color: #F57C00;
+    color: white;
+}
+/*FIM CARDS*/
+
+#botoesSeta{
+    width: 100%;
+    height: 50px;
+}
+.botaoSeta{
+    display: flex;
+    justify-content: center;
+
+    flex-flow: row wrap;
+}
+.buttonLeft{
+    width: 60px;
+    height: 60px;
+    margin-right: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(211, 211, 211, 0.521);
+    border-radius: 50px;
+
+    cursor: pointer;
+}
+.buttonLeft:hover{
+    background-color: #F57C00;
+}
+.buttonRight{
+    width: 60px;
+    height: 60px;
+    margin-left: 5px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    background-color: rgba(211, 211, 211, 0.521);
+    border-radius: 50px;
+
+    cursor: pointer;
+}
+.buttonRight:hover{
+    background-color: #F57C00;
+}
+/*FIM BOTÕES SETA*/
+
+/*INÍCIO FEEDBACKS*/
+#feedbacks{
+    width: 100%;
+    height: 800px;  
+    margin-top: 100px;
+
+    text-align: center;
+}
+.descricaoFeedback{
+    width: 100%;
+    height: 200px;
+}
+.descricaoFeedback h1{
+    font-family: 'Bodoni Moda';
+    font-size: 70px;
+
+    display: inline;
+}
+.descricaoFeedback h1#dourado{
+    padding-left: 20px;
+    color: #F57C00;
+}
+.textoFeedbacks p{
+    color: gray;
+    font-family: Poppins;
+
+    margin-top: 20px;
+}
+
+.cardsFeedbacks{
+    width: 100%;
+    height: 400px;
+
+    margin-top: 30px;
+
+    display: flex;
+    justify-content: space-around;
+}
+.cardsFeedbacks p{
+    color: gray;
+    font-weight: 500;
+}
+.feedCard{
+    width: 400px;
+    height: 300px;
+
+    font-family: Poppins;
+    text-align: justify;
+}
+.imgFirst{
+    display: flex;
+    justify-content: start;
+}
+.comentario{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: start;
+    align-items: center;
+
+    margin-top: 15px;
+}
+.imgPerfil{
+    width: 70px;
+    height: 70px;
+
+    border-radius: 50px;
+}
+.NomeDesc{
+    margin-left: 10px;
+}
+#nomeN{
+    color: black;
+    font-weight: 600;
+}
+.imgSecond{
+    display: flex;
+    justify-content: start;
+}
+.imgThird{
+    display: flex;
+    justify-content: start;
+}
+
+
+.BotaoVermais{
+    width: 100%;
+    height: 50px;
+
+    border: 1px solid orange;
+}
+.BotaoVerMais a{
+    padding: 10px 20px 10px 20px;
+
+    color: white;
+    font-family: Poppins;
+    font-size: 18px;
+    text-decoration: none;
+
+    background-color: #F57C00;
+    border: 1px solid #F57C00;
+    border-radius: 50px;
+}
+.BotaoVerMais a:hover{
+    color: black;
+}
+/*FIM FEEDBACKS*/
+
+
+#entreEmail{
+    width: 100%;
+    height: 500px;
+    background-image: url(imagens/imgFundo.png);
+    border-radius: 20px;
+
+    text-align: center;
+
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+}
+.titulo h1#normal{
+    font-family: 'Bodoni Moda';
+    font-size: 70px;
+
+    display: inline;
+    justify-content: center;
+}
+.titulo h1#dourado{
+    padding-left: 20px;
+    font-size: 70px;
+    color: #F57C00;
+
+    display: inline;
+}
+.titulo h1#dourado02{
+    font-family: 'Bodoni Moda';
+    font-size: 70px;
+    color: #F57C00;
+
+    display: block;
+}
+
+.email{
+    width: 100%;
+    height: 50px;
+
+    text-align: center;
+
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+    margin-top: 30px;
+}
+.miniContainer{
+    width: 500px;
+    height: 50px;
+
+    border: 1px solid gray;
+    border-radius: 50px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.input{
+    font-family: Poppins;
+    color: rgba(0, 0, 0, 0.692);
+
+    padding: 10px 15px 10px 15px;
+}
+.submit{
+    height: 40px;
+    font-family: Poppins;
+    color: white;
+
+    padding: 8px 15px 10px 15px;
+    margin-right: 6px;
+
+    background-color: #F57C00;
+    border-radius: 50px;
+
+    cursor: pointer;
+}
+.submit p:hover{
+    color: black;
+}
+/*FIM ENTRE COM EMAIL*/
+
+footer{
+    width: 100%;
+    margin-top: 50px;
+
+    background-color: rgba(211, 211, 211, 0.219);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.alinhamentoF{
+    width: 1350px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.redesSociais{
+    width: 260px;
+    height: 300px;
+}
+
+.logoF{
+    margin-top: 35px;
+    margin-bottom: 20px;
+    margin-left: 10px;
+}
+
+.descricao{
+    width: 100%;
+    height: 70px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+
+    color: rgb(88, 88, 88);
+
+    padding-left: 27px;
+}
+.imgRedesS{
+    width: 100%;
+    margin-top: 30px;
+    padding-left: 26px;
+
+}
+/*FIM FOOTER REDES SOCIAIS*/
+.tituloP{
+    font-family: Poppins;
+    margin-top: 50px;
+    margin-bottom: 25px;
+}
+
+.products{
+    width: 200px;
+    height: 300px;
+
+    display: flex;
+    flex-flow: column wrap;
+}
+.products a{
+    padding: 10px 0px 10px 0px;
+    text-decoration: none;
+
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(88, 88, 88);
+}
+/*FIM FOOTER PRODUCTS*/
+
+.information{
+    width: 200px;
+    height: 300px;
+
+    display: flex;
+    flex-flow: column wrap;
+}
+.information a{
+    padding: 10px 0px 10px 0px;
+    text-decoration: none;
+
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(88, 88, 88);
+}
+/*FIM FOOTER INFORMATION*/
+
+.company{
+    width: 200px;
+    height: 300px;
+
+    display: flex;
+    flex-flow: column wrap;
+}
+.company a{
+    padding: 10px 0px 10px 0px;
+    text-decoration: none;
+
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(88, 88, 88);
+}
+/*FIM FOOTER COMPANY*/
+
+.getInTouch{
+    width: 300px;
+    height: 300px;
+
+    display: flex;
+    flex-flow: column wrap;
+}
+.getInTouch p{
+    font-family: Poppins;
+    font-size: 12px;
+    font-weight: 600;
+    color: rgb(88, 88, 88);
+}
+.miniContainer02{
+    width: 275px;
+    height: 50px;
+    margin-top: 30px;
+
+    background-color: white;
+    border-radius: 10px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.submitF a{
+    height: 40px;
+    font-family: Poppins;
+    color: white;
+
+    padding: 10px 15px 10px 15px;
+    margin-right: 6px;
+
+    cursor: pointer;
+}
+/*FIM FOOTER GET IN TOUCH*/
+
+/*ALINHAMENTO DO COPYRIGHT*/
+.alinhamentoM{
+    width: 1350px;
+    display: flex;
+    justify-content: end;
+}
+.made{
+    height: 40px;
+
+    font-family: Poppins;
+    font-size: 12px;
+    color: rgba(119, 119, 119, 0.945);
+
+    display: flex;
+    align-items: center;
+    justify-content: end;
+}
+/*FIM DO ALINHAMENTO DO COPYRIGHT*/
+
+/*LINHA QUE DIVIDE O FOOTER DO COPYRIGHT*/
+.footer-divisao{
+    width: 1350px;
+    border-top: 3px solid gray;
+
+    margin-bottom: 30px;
+}
+
+/*ESPAÇAMENTO DO COPYRIGHT PARA BAIXO*/
+.espacamento{
+    width: 100%;
+    height: 50px;
+    background-color: rgba(211, 211, 211, 0.219);
+
+    border: none;
+}
